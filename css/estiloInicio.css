@@ -1,0 +1,384 @@
+*
+{
+    outline:none;
+}
+div.contenedorGlobal .contendorAzulInicio
+{
+    background-color: #202f38;
+    min-width: 960px;
+    text-align: center;
+}
+div.contenedorGlobal .contendorAzulInicio .barraMenuInicio
+{    
+    min-width: 960px;
+    border-bottom: 1px solid #000;
+}
+div.contenedorGlobal .contendorAzulInicio .barraMenuInicio .barraMenuInicioInterna
+{
+     background-color: #202f38;
+     height: 48px;
+     width: 960px;
+     margin: 0 auto;
+}
+div.contenedorGlobal .contendorAzulInicio .contenedorSlide
+{
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    min-width: 960px;
+    background-color: #111;
+}
+div.contenedorGlobal .contendorAzulInicio .contenedorSlideInterno
+{
+    width: 960px;
+    margin: 0 auto;
+}
+div.contenedorGlobal .contendorAzulInicio .barraInferiorSlide
+{
+    border-top: 1px solid #000;
+    height: 70px;
+}
+/* - - - - - MENU STYLE - - - - - -*/
+ul.MenuBarHorizontal
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 10pt;
+    cursor: default;
+    width: auto;
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive
+{
+    z-index: 1000;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 10pt;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    width: 10em;
+    float: left;
+}
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 100%;
+    z-index: 1020;
+    cursor: default;
+    width: 8.2em;
+    position: absolute;
+    left: -1000em;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
+{
+    left: auto;
+}
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarHorizontal ul li
+{
+    width: 8.2em;
+}
+/* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
+ul.MenuBarHorizontal ul ul
+{
+    position: absolute;
+    margin: -5% 0 0 95%;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible
+{
+    left: auto;
+    top: 0;
+}
+/* Submenu containers have borders on all sides */
+ul.MenuBarHorizontal ul
+{
+    border: 1px solid #fff;
+}
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarHorizontal a
+{
+    background-color: Transparent;
+    border-left: 1px solid #666666;
+    border-right: 1px solid #000000;
+    color: #aaaaaa;
+    cursor: pointer;
+    display: block;
+    height: 21px !important;
+    padding-top: 28px;
+    padding-right: 10px;
+    text-decoration: none;
+    text-align: right;
+}
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+    background-color: Transparent;
+    color: #FFF;
+    text-shadow: 0px 2px 0px #000;
+}
+#menuSEH:hover
+{
+    background: #142b39 url('../recursos/imagenes/selMenuSEH.png') left top scroll repeat-x;
+}
+#menuEFA:hover
+{
+    background: #142b39 url('../recursos/imagenes/selMenuEFA.png') left top scroll repeat-x;
+}
+#menuECI:hover
+{
+    background: #142b39 url('../recursos/imagenes/selMenuECI.png') left top scroll repeat-x;
+}
+#menuOE:hover
+{
+    background: #142b39 url('../recursos/imagenes/selMenuOE.png') left top scroll repeat-x;
+}
+#menuOI:hover
+{
+    background: #142b39 url('../recursos/imagenes/selMenuOI.png') left top scroll repeat-x;
+}
+#menuCC:hover
+{
+    background: #142b39 url('../recursos/imagenes/selMenuPSEC.png') left top scroll repeat-x;
+}
+#menuRegistroIndicador:hover
+{
+    background: #73ac59 url('../recursos/imagenes/buttonsBg.png') 0 -47px scroll repeat-x;
+}
+#menuRegistroIndicador a:hover
+{
+    text-shadow: 1px 1px 0px #333333;
+}
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+    background-color: #33C;
+    color: #FFF;
+}
+ul.MenuBarHorizontal .menuIniciarSesion
+{
+    text-align: center; 
+    cursor:default;
+}
+ul.MenuBarHorizontal .menuIniciarSesion input[type="button"]
+{
+    background-color: #0a3652;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e4f77', endColorstr='#0a3652'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#0e4f77), to(#0a3652)); /* for webkit browsers */
+    background: -moz-linear-gradient(center top , #0e4f77, #0a3652); /* for firefox 3.6+ */
+    border: 1px solid #041926;
+    color: #ccc;
+    padding: 0.4em 0.9em;
+    cursor: pointer;
+    margin-left: 1em;
+    margin-top:0.8em;
+     border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 134px;
+    box-shadow: 0 1px 0 #555;
+    -moz-box-shadow: 0 1px 0 #555;
+    -webkit-box-shadow: 0 1px 0 #555;
+    -o-box-shadow: 0 1px 0 #555;
+    opacity : 0.4;
+    -moz-opacity : 0.4;
+    -webkit-opacity : 0.4;
+    -o-opacity : 0.4;
+    filter:alpha(opacity=40);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+ul.MenuBarHorizontal .menuIniciarSesion input[type="button"]:hover
+{
+    opacity : 1.0;
+    -moz-opacity : 1.0;
+    -webkit-opacity : 1.0;
+    -o-opacity : 1.0;
+    filter:alpha(opacity=100);
+}
+/* - - - - -FIN  MENU- - - - - - - */
+div.contenedorGlobal .contenidoInicio
+{
+    min-width: 960px;
+    background-color: #202F38;
+    text-align: center;
+    font-size: 18pt;
+}
+div.contenedorGlobal .contenidoInicioInterno
+{
+    width: 958px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+div.contenedorGlobal .contenidoInicio .contenidoInicioInterno .tituloInicio
+{
+    color: #999;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #999999;
+}
+div.contenedorGlobal .contenidoInicio .contenidoInicioInterno .descripcionInicio
+{
+    color: #666666;
+    text-align: justify;
+    padding: 20px;
+    font-size: 12pt;
+}
+strong
+{
+    color: #333333;
+    font-family: Tahoma, Sans-Serif;
+    font-weight: 200;
+}
+.links
+{
+    font-family: Tahoma, Sans-Serif;
+    color: #004f84;
+    text-decoration: none;
+}
+.links:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+a.linkSlideShow
+{
+    font-family: Tahoma, Sans-Serif;
+    color: #00a8ff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 16pt;
+}
+a.linkSlideShow:hover
+{
+    text-decoration: underline;
+}
+div.contenedorGlobal .contenidoInicio .contenidoInicioInterno .descripcionInicio .cajas
+{
+    background-color: transparent;
+    height: 201px;
+    width: 260px;
+    background: Transparent url('../recursos/imagenes/indexBoxes.png') no-repeat;
+    text-align: center;
+}
+div.contenedorGlobal .contenidoInicio .contenidoInicioInterno .descripcionInicio .cajas .tituloCajas
+{
+    color: #666666;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 6px;
+    border-bottom: #666666 solid 1px;
+    text-align: left;
+    padding-left: 5px;
+    margin-right: 20px;
+}
+div.contenedorGlobal .contenidoInicio .contenidoInicioInterno .descripcionInicio .cajas .contenidoCajas
+{
+    color: #333333;
+    padding: 10px 4px 0px 6px;
+    text-align: justify;
+    font-size: 10pt;
+}
+div.contenedorGlobal .contenidoInicio .contenidoInicioInterno .descripcionInicio .cajas .linkCajas
+{
+    text-align: right;
+    padding-right: 6px;
+}
+.barraInferiorSlide .EspacioCooperantes{
+    color: #aaa;
+    height: 100%;
+    overflow: hidden;
+    text-align: left;
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 5px;
+}
+.barraInferiorSlide .EspacioCooperantes h3{
+    display: inline-block;
+    font-size: 18pt;
+    text-shadow: 0 1px 0 #000;
+    padding-right: 22px;
+    padding-top: 12px;
+}
+.barraInferiorSlide .EspacioCooperantes ul, .barraInferiorSlide .EspacioCooperantes ul li{
+    display: inline-block
+}
+/*
+CSS especial para el menu en inicio
+*/
+.menu{
+    height: 100%;
+}
+.menu a{
+    padding-top: 18px;
+    height: 31px;
+}
+.menu > li:first-child, .menu > li:last-child{
+    border-left: 1px solid #777;
+    /*box-shadow: -1px 0 0 #000;*/
+}
+.menu > li{
+    border-right: 1px solid #777;
+    box-shadow: 1px 0 0 #000;
+}
+/*
+para el slider
+*/
+.theme-dark .nivo-caption{
+    text-align: left;
+}
+.theme-dark .nivo-caption strong{
+    color: #fff;
+    font-weight: bold;
+    font-size: 12pt;
+    width: 100%;
+    display:inline-block;
+}
+.theme-dark .nivoSlider{
+    height: 100%;
+}
+.detallesSubsitios{
+}
+.detallesSubsitios li{
+    padding-bottom:10px;
+    padding-top:10px;
+}
+.detallesSubsitios li div:first-child{
+    display: inline-block;
+    max-width: 320px;
+}
+.detallesSubsitios li div:last-child{
+    display: inline-block;
+    width: 580px;
+    padding-left: 20px;
+}
+.detallesSubsitios li div:last-child ul{
+    box-shadow: 0 0 7px #777 inset;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    font-size: 10pt;
+}
+.detallesSubsitios li div:last-child ul li{
+    padding: 0;
+}
+.detallesSubsitios h2{
+    font-size: 22pt;
+    color: #aaa;
+    font-weight: bold;
+    border-bottom: 2px solid #999;
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+div.contenedorGlobal .contenedorMenusSubsitios
+{
+    background-color: #1c778f;
+}
+div.contenedorGlobal .contenidoGlobalInterno
+{
+    border-left: 1px solid #1c778f;
+    border-right: 1px solid #1c778f;
+}
+div.contenedorGlobal .contenidoGlobalInterno .link
+{
+    color: #1c778f;
+    cursor: pointer;
+    text-decoration: none;
+}
+.indicadorEnContenido .headerPanelOpciones
+{
+   background-color: #1c778f; 
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .espacioMenuSubsitios
+{
+    border: 1px solid #2091af; 
+    height: 36px;
+    background: transparent url('../recursos/imagenes/menusBgStrong.png') repeat-x; 
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales
+{
+   padding: 4px 10px;
+   font-size: 7pt;
+   color: #2091af;
+   border-left: 1px solid #2091af;
+   border-right: 1px solid #2091af;
+   background-color: #145162;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a
+{
+   color: #1c778f;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a:hover
+{
+   color: #2091af;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales span
+{
+   color: #2091af;
+}

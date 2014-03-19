@@ -1,0 +1,116 @@
+.tipsy {
+    font-size: 10pt;
+    padding: 5px;
+    position: absolute;
+    z-index: 100000;
+    opacity: 0.8; 
+    -moz-opacity: 0.8; 
+    -webkit-opacity: 0.8; 
+    filter: alpha(opacity=80);
+}
+.tipsy-inner {
+    background-color: #000;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    max-width: 300px;
+    min-width: 100px;
+    width: auto;
+    padding: 5px 8px 4px;
+}
+.tipsy-inner {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.tipsy-arrow {
+    background: url('tipsy.gif') no-repeat scroll left top transparent;
+    height: 5px;
+    position: absolute;
+    width: 9px;
+}
+.tipsy-n .tipsy-arrow {
+    left: 50%;
+    margin-left: -4px;
+    top: 0;
+}
+.tipsy-nw .tipsy-arrow {
+    left: 10px;
+    top: 0;
+}
+.tipsy-ne .tipsy-arrow {
+    right: 10px;
+    top: 0;
+}
+.tipsy-s .tipsy-arrow {
+    background-position: left bottom;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+}
+.tipsy-sw .tipsy-arrow {
+    background-position: left bottom;
+    bottom: 0;
+    left: 10px;
+}
+.tipsy-se .tipsy-arrow {
+    background-position: left bottom;
+    bottom: 0;
+    right: 10px;
+}
+.tipsy-e .tipsy-arrow {
+    background-position: right top;
+    height: 9px;
+    margin-top: -4px;
+    right: 0;
+    top: 50%;
+    width: 5px;
+}
+.tipsy-w .tipsy-arrow {
+    height: 9px;
+    left: 0;
+    margin-top: -4px;
+    top: 50%;
+    width: 5px;
+}
+/*.tipsy 
+{
+    padding: 5px; 
+    font-size: 10pt;
+    text-shadow: 0 1px 0 #000;
+    opacity: 0.7; 
+    filter: alpha(opacity=70); 
+    background-repeat: no-repeat;  
+    background-image: url('tipsy.gif');
+}
+.tipsy-inner 
+{ 
+    padding: 5px 8px 4px 8px; 
+    background-color: black; 
+    color: white; 
+    min-width: 100px;
+    width: auto;
+    max-width: 300px;
+}
+.tipsy-inner 
+{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px; 
+    border-radius: 3px;
+}
+.tipsy-north 
+{ 
+    background-position: top center;
+}
+.tipsy-south
+{ 
+    background-position: bottom center;
+}
+.tipsy-east 
+{ 
+    background-position: right center; 
+}
+.tipsy-west 
+{ 
+    background-position: left center;
+}
+*/

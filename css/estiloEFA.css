@@ -1,0 +1,69 @@
+div.contenedorGlobal .contenedorMenusSubsitios
+{
+    background-color: #d97623;
+}
+div.contenedorGlobal .contenidoGlobalInterno
+{
+    border-left: 1px solid #975218;
+    border-right: 1px solid #975218;
+}
+div.contenedorGlobal .contenidoGlobalInterno .link
+{
+    color: #d97623;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contenedorGlobalDeIndicadores
+{
+    border: 1px solid #d97623;
+}
+.indicadorEnContenido .headerPanelOpciones
+{
+   background-color: #d97623; 
+}
+.bordeCajaAnio
+{
+    border-color:  #d97623!important;
+}
+.headerAnioActual
+{
+    background-color: #d97623!important;
+    color: #fff!important;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .espacioMenuSubsitios
+{
+    border: 1px solid #ffa255; 
+    height: 36px;
+    background: transparent url('../recursos/imagenes/menusBgStrong.png') repeat-x; 
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales
+{
+   padding: 4px 10px;
+   font-size: 7pt;
+   color: #ffc08b;
+   border-left: 1px solid #ffa255;
+   border-right: 1px solid #ffa255;
+   background: #d97623 url('../recursos/imagenes/menusBg.png') repeat-x;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a
+{
+   color: #d97623;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a:hover
+{
+   color: #ffc08b;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales span
+{
+   color: #ffc08b;
+}
+.ventanaProcesosSIEE
+{
+    border-color:#6A3911;
+}
+.ventanaProcesosSIEE .encabezadoVentana
+{
+    background-color:#D97623;
+    text-shadow: 0 1px 0 0 #123361;
+    border-bottom: 1px solid #6A3911;
+}

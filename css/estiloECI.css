@@ -1,0 +1,59 @@
+div.contenedorGlobal .contenedorMenusSubsitios
+{
+    background-color: #979418;
+}
+div.contenedorGlobal .contenidoGlobalInterno
+{
+    border-left: 1px solid #979418;
+    border-right: 1px solid #979418;
+}
+div.contenedorGlobal .contenidoGlobalInterno .link
+{
+    color: #979418;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contenedorGlobalDeIndicadores
+{
+    border: 1px solid #979418;
+}
+.indicadorEnContenido .headerPanelOpciones
+{
+   background-color: #979418; 
+}
+.bordeCajaAnio
+{
+    border-color:  #979418!important;
+}
+.headerAnioActual
+{
+    background-color: #979418!important;
+    color: #fff!important;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .espacioMenuSubsitios
+{
+    border: 1px solid #b5b240; 
+    height: 36px;
+    background: transparent url('../recursos/imagenes/menusBgStrong.png') repeat-x; 
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales
+{
+   padding: 4px 10px;
+   font-size: 7pt;
+   color: #b5b240;
+   border-left: 1px solid #b5b240;
+   border-right: 1px solid #b5b240;
+   background-color: #6d6a1b;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a
+{
+   color: #979418;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a:hover
+{
+   color: #b5b240;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales span
+{
+   color: #b5b240;
+}

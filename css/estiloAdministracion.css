@@ -1,0 +1,479 @@
+div.contenedorGlobal .contenedorMenusSubsitios
+{
+    background-color: #202f38;
+}
+div.contenedorGlobal .contenidoGlobalInterno
+{
+    border-left: 1px solid #202f38;
+    border-right: 1px solid #202f38;
+}
+div.contenedorGlobal .contenidoGlobalInterno .link
+{
+    color: #2e66c3;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contenedorGlobalDeIndicadores
+{
+    border: 1px solid #202f38;
+}
+.indicadorEnContenido .headerPanelOpciones
+{
+    background-color: #202f38; 
+}
+.bordeCajaAnio
+{
+    border-color:  #002b45!important;
+}
+.headerAnioActual
+{
+    background-color: #202f38!important;
+    color: #fff!important;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .espacioMenuSubsitios
+{
+    border: 1px solid #314e60; 
+    height: 36px;
+    background: transparent url('../recursos/imagenes/menusBgStrong.png') repeat-x; 
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales
+{
+    padding: 4px 10px;
+    font-size: 7pt;
+    color: #91AED4;
+    border-left: 1px solid #314e60;
+    border-right: 1px solid #314e60;
+    background-color: #202f38;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a
+{
+    color: #5c849c;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a:hover
+{
+    color: #4c7fd4;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales span
+{
+    color: #5c849c;
+}
+div.contenedorGlobal .contenidoGlobalInterno .leftPanelControl .panelInnerContent .cajaOpciones .headerTitle
+{
+    font-weight: bold;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon
+{
+    padding: 10px 0px;
+    background-color: #fff;
+    display: none;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado
+{
+    border-bottom: 1px solid #666666;
+    height: 60px;
+    width: 100%;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado .icono
+{
+    float: left;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado .lineaVertical
+{
+    border-right: 4px solid #666666;
+    width: 12px;
+    height: 48px;
+    float: left;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado .descripcion
+{
+    color: #666666;
+    float: left;
+    width: 710px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado .descripcion .titulo
+{
+    font-size: 22pt;
+    text-indent: 12px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado .descripcion .titulo .botonCerrarSeccion
+{
+    background: url("../recursos/imagenes/buttonsBg.png") no-repeat scroll 0 -96px #E1C400;
+    border: 1px solid #BDB600;
+    color: #807c17;
+    float: right;
+    font-size: 10pt;
+    padding: 4px 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado .descripcion .titulo .botonCerrarSeccion:hover
+{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .encabezado .descripcion .subTitulo
+{
+    font-size: 9pt;
+    text-indent: 12px;
+    height: 40px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido
+{
+    font-size: 9pt;
+    color: #333333;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .tabIcons
+{
+    position: relative;
+    top: 3px
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios
+{
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    height: auto;
+    padding: 8px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios
+{
+    padding: 4px;
+    color: #777;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios label
+{
+    display: inline-block;
+    min-width: 180px;
+    position: relative;
+    top: 4px;
+    width: auto;
+    height: 24px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios input[type="text"]
+{
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding: 4px;
+    width: 500px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios input[type="text"]:hover
+{
+    border-color: #888;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios textarea
+{
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding: 4px;
+    width: 500px;
+    min-height: 40px;
+    height: 80px;
+    resize: vertical;
+    max-height: 210px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios textarea:hover
+{
+    border-color: #888;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios select
+{
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding: 4px;
+    width: 509px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios select:hover
+{
+    border-color: #888;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .chkBxInput
+{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #777777;
+    display: inline;
+    padding: 4px;
+    width: auto;
+    cursor: pointer;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .chkBxInput:hover
+{
+    border-color: #888;
+    color: #333;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .chkBxInput input[type="checkbox"]
+{
+    position: relative;
+    top: 2px;
+    width: 24px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .boxListasChkBx
+{
+    border: 1px solid #CCCCCC;
+    color: #777;
+    padding: 4px;
+    width: 500px;
+    display: inline-block;
+    background-color: #fff;
+    max-height: 134px;
+    overflow-y:scroll;
+    overflow-x:hidden; 
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .boxListasChkBx li
+{
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .boxListasChkBx li input
+{
+    position: relative;
+    top: 2px;
+    width: 24px;
+    cursor: pointer;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .campo_error
+{
+    border: 1px solid #A52A2A!important;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .headerFromularios
+{
+    background-color: #DEDEDE;
+    border-bottom: 1px solid #BBBBBB;
+    font-size: 12pt;
+    padding: 6px;
+    text-align: left;
+    text-shadow: 0 1px 0 #EEEEEE;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .optionPane
+{
+    background-color: #EEE;
+    border: 1px solid #BBB;
+    padding: 6px;
+    text-align: right;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .contenidoBuscador
+{
+    padding: 4px;
+    margin: 4px;
+    background-color: #EEEEEE;
+    border: 1px solid #BBBBBB;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .contenidoBuscador #buscadorSeriesIndicadores,
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .contenidoBuscador #buscadorIndicadores
+{
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding: 4px;
+    width: 98.5%;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .contenidoBuscador #buscadorSeriesIndicadores:hover,
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .contenidoBuscador #buscadorIndicadores:hover
+{
+    border-color: #888;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios  a
+{
+    font-size: 7pt;
+    color: #2e66c3;
+    cursor: pointer;
+    text-decoration: none;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios  a:hover
+{
+    text-decoration: underline;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .listado
+{
+    background-color: #CCCCCC;
+    border: 1px solid #AAAAAA;
+    max-height: 400px;
+    height: auto;
+    margin: 6px;
+    overflow-y: scroll;
+    padding: 14px;
+    min-height: 200px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .listado li
+{
+    background-color: #F1F1F1;
+    border: 1px solid #999999;
+    height: auto;
+    overflow: auto;
+    padding: 4px;
+    margin-bottom: 12px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .listado li:hover
+{
+    box-shadow: 0px 0px 6px #777;    
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .listado li .descripcion
+{
+    float: left;
+    height: auto;
+    overflow: auto;
+    width: 79.5%;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .listado li .descripcion .items
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-indent: 8px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: 100%;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .listado li .opciones
+{
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 12px;
+    text-align: center;
+    width: 16%;
+    background-color: #fff;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .itemsFormularios .errores_por_campo
+{
+    color: #FF0000;
+    font-size: 8pt;
+    text-indent: 184px;
+    padding-bottom: 2px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .errores_generales_formulario
+{
+    background-color: #FFC0CB;
+    border: 1px solid #A52A2A;
+    padding: 6px;
+    display: none;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .exito_generales_formulario
+{
+    background-color: #DFFEC8;
+    border: 1px solid #91D160;
+    padding: 6px;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkActivar 
+{
+    cursor: pointer;
+    display: block;
+    background-color: #DFFEC8;
+    border: 1px solid #91D160;
+    padding: 4px;
+    opacity: 0.7;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkActivar:hover
+{
+    opacity: 1.0;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkActivar input
+{
+    position: relative;
+    top: 2px;
+    width: 26px;
+    cursor: pointer;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkDesactivar 
+{
+    cursor: pointer;
+    display: block;
+    background-color: #FFFFCC;
+    border: 1px solid #FFCC35;
+    padding: 4px;
+    opacity: 0.7;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkDesactivar:hover
+{
+    opacity: 1.0;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkDesactivar input
+{
+    position: relative;
+    top: 2px;
+    width: 26px;
+    cursor: pointer;
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkSeleccionado
+{
+    opacity: 1;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 9pt;    
+}
+div.contenedorGlobal .contenidoGlobalInterno .righContentPanel .espacioProcesosAdmon .contenido .formularios .chkSeleccionado input
+{
+    position: relative;
+    top: 1px;
+    width: 26px;
+    cursor: pointer;
+}
+span.campoDisponibilidad
+{
+    color: #999999;
+    display: inline-block;
+    font-style: italic;
+    left: 4px;
+    position: relative;
+    top: 4px;
+}
+span.campoDisponibilidad i
+{
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    width: 16px;
+}
+i.disponible
+{
+    background-image: url("../recursos/iconos/status.png");
+}
+i.noDisponible
+{
+    background-image: url("../recursos/iconos/status-busy.png");
+}
+i.cargando
+{
+    background-image: url("../recursos/iconos/circle-loading.gif");
+}
+/*Estilo para seccion de Poblacion Estinada*/
+.ContenedorTablaDeAnios table{
+    width:100%;
+    background-color: white;
+    border: 1px solid #6d6d6d;
+    padding: 4px;
+}
+
+.ContenedorTablaDeAnios table thead{
+    border: 1px solid #6d6d6d;
+    height: 36px;
+    width: 100%;
+    background: #b6b5b3; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c3c3c1', endColorstr='#b6b5b3'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#c3c3c1), to(#b6b5b3)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #c3c3c1,  #b6b5b3); /* for firefox 3.6+ */
+    box-shadow: inset 0 1px 0 #DBDBDB;
+    -moz-box-shadow: inset 0 1px 0 #DBDBDB;
+    -o-box-shadow: inset 0 1px 0 #DBDBDB;
+    -webkit-box-shadow: inset 0 1px 0 #DBDBDB;
+   
+    text-shadow: 0 1px 0 #DBDBDB;
+}
+
+.ContenedorTablaDeAnios table thead th{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.ContenedorTablaDeAnios table tbody td{
+    text-align: center;
+    padding:4px;
+}
+
+.ContenedorTablaDeAnios table td input{
+    position:relative;
+    top:2px;
+}
+
+.ContenedorTablaDeAnios table tbody tr:nth-child(odd) {
+    background-color:#f1f5fa;
+}

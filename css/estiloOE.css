@@ -1,0 +1,59 @@
+div.contenedorGlobal .contenedorMenusSubsitios
+{
+    background-color: #6b882f;
+}
+div.contenedorGlobal .contenidoGlobalInterno
+{
+    border-left: 1px solid #6b882f;
+    border-right: 1px solid #6b882f;
+}
+div.contenedorGlobal .contenidoGlobalInterno .link
+{
+    color: #6b882f;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contenedorGlobalDeIndicadores
+{
+    border: 1px solid #6b882f;
+}
+.indicadorEnContenido .headerPanelOpciones
+{
+   background-color: #6b882f; 
+}
+.bordeCajaAnio
+{
+    border-color:  #6b882f!important;
+}
+.headerAnioActual
+{
+    background-color: #6b882f!important;
+    color: #fff!important;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .espacioMenuSubsitios
+{
+    border: 1px solid #95b15c; 
+    height: 36px;
+    background: transparent url('../recursos/imagenes/menusBgStrong.png') repeat-x; 
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales
+{
+   padding: 4px 10px;
+   font-size: 7pt;
+   color: #95b15c;
+   border-left: 1px solid #95b15c;
+   border-right: 1px solid #95b15c;
+   background-color: #44581c;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a
+{
+   color: #6b882f;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales a:hover
+{
+   color: #95b15c;
+}
+div.contenedorGlobal .contenedorMenusSubsitios .contenedorMenusSubsitiosInterno .navegacionSecunciales span
+{
+   color: #95b15c;
+}

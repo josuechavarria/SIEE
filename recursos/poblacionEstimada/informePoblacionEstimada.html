@@ -1,0 +1,355 @@
+<style type="text/css">
+    .explicacionPobEst
+    {
+        height: auto;
+        width: 900px;
+        border: 1px solid #395362;
+        font-size: 10pt;
+        color: #333;
+    }
+    .explicacionPobEst .links
+    {
+        color: #2E66C3;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .explicacionPobEst .links:hover
+    {
+        text-decoration: underline;
+    }
+    .explicacionPobEst .titulo
+    {
+        background-color: #395362;
+        color: #eee;
+        text-align: right;
+        height: 22px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        font-size: 14pt;
+        text-shadow: 0 1px 1px #000;
+    }
+    .explicacionPobEst .contenidoGlobal
+    {
+        padding: 2px;
+    }
+    .explicacionPobEst .contenidoGlobal .titles
+    {
+        font-size: 12pt;
+        font-weight: bold;
+        border-bottom: 1px solid #777;
+        padding: 4px;
+    }
+    .explicacionPobEst .contenidoGlobal .contenido
+    {
+        padding: 6px;
+        text-align: justify;
+    }
+    .explicacionPobEst ul
+    {
+        margin-left: 22px;
+        list-style: disc outside none;
+    }
+    .explicacionPobEst .contenidoGlobal table
+    {
+        width: 100%;
+        display: block;
+        background-color: #CCC;
+        border: 1px solid #777;
+    }
+    .explicacionPobEst .contenidoGlobal table thead th
+    {
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        text-shadow: 0px 1px #f1f1f1;
+        border-bottom: 1px solid;
+    }
+    .explicacionPobEst .contenidoGlobal table tbody th, .explicacionPobEst .contenidoGlobal table tbody td
+    {
+        height: 20px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid;
+        background-color: #fff;
+        color: #333;
+        border-right: 1px solid #aaa;
+    }
+    .explicacionPobEst .contenidoGlobal .seccionDescarga
+    {
+        background-color: #F9F9F9;
+        border: 1px solid #AAA;
+        box-shadow: 0 0 6px #999;
+        font-size: 12pt;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+        text-shadow: 0 1px #FFF;
+    }
+    .explicacionPobEst .contenidoGlobal .seccionDescarga a
+    {
+        color: #2E66C3;
+        text-decoration: none;
+        cursor: pointer;        
+    }
+    .explicacionPobEst .contenidoGlobal .seccionDescarga a:hover
+    {
+        text-decoration: underline;
+    }
+    .explicacionPobEst .optionBtns
+    {
+        font-size: 10pt;
+        color:#395362;
+        cursor: pointer;
+    }
+</style>
+<script type="text/javascript">
+    function showMore()
+    {
+        $("#moreInfo").fadeIn('fast');
+        $("#optViewMore").fadeOut('fast');
+        $("#optViewLess").fadeIn('fast');        
+    }
+    function showLess()
+    {
+        $("#moreInfo").fadeOut('fast');
+        $("#optViewMore").fadeIn('fast');
+        $("#optViewLess").fadeOut('fast');        
+    }
+</script>
+<div class="explicacionPobEst">
+    <div class="titulo">
+        Calculo del M&iacute;nimo de Poblaci&oacute;n Estimada&nbsp;&nbsp;
+    </div>
+    <div class="contenidoGlobal">
+        <p class="titles">Criterio adoptado para la estimaci&oacute;n de datos poblacionales :</p>
+        <p class="contenido">No existe en el pa&iacute;s una fuente de datos poblacionales exhaustiva, actualizada y confiable. La
+            &uacute;ltima medici&oacute;n censal data del a&ntilde;o 2001, y existe una multiplicidad de estimaciones de
+            poblaci&oacute;n, que arrojan datos con significativos grados de divergencia. Por este motivo, en el
+            documento de trabajo se adopt&oacute; un criterio alternativo de estimaci&oacute;n de poblaci&oacute;n, a partir de
+            los datos de matr&iacute;cula escolar. Este criterio permite atender el requerimiento planteado para
+            el informe, que es la fijaci&oacute;n de metas a nivel municipal.
+            <br/>
+            A continuaci&oacute;n, se detallan las caracter&iacute;sticas de las fuentes de poblaci&oacute;n consultadas, y se
+            justifica la decisi&oacute;n de adoptar un criterio alternativo.
+        </p>
+        <div class="contenido">
+            <ul>
+                <li>
+                    <span style="font-weight: bold;">Los datos poblacionales disponibles</span>
+                    <br/>
+                    <ul style="list-style: circle;">
+                        <li>
+                            <div style="text-decoration: underline;">Datos censales:</div>
+                            <div>El &uacute;ltimo relevamiento censal data del a&ntilde;o 2001. 
+                                Es importante destacar que los datos censales publicados corresponden a la
+                                informaci&oacute;n "bruta", que no ha sido corregida a trav&eacute;s de la imputaci&oacute;n de los casos
+                                de no respuesta.
+                                Estos datos resultan inconsistentes con los datos de matrícula escolar, ya que la
+                                poblaci&oacute;n por edad resulta sensiblemente menor a la cantidad de alumnos
+                                matriculados.
+                                Se destaca en los datos censales un incremento significativo en la poblaci&oacute;n que ten&iacute;a
+                                0 a 2 a&ntilde;os en el momento del relevamiento
+                            </div>
+                            <br/>
+                        </li>
+                        <li>
+                            <div style="text-decoration: underline;">Proyecciones poblacionales del Instituto de Estad&iacute;stica:</div>
+                            <div>
+                                Las proyecciones poblacionales fueron realizadas considerando como una tendencia constante el crecimiento
+                                poblacional verificado en el Censo en la poblaci&oacute;n de 0 a 2 a&ntilde;os.
+                                Al partir de este supuesto, las proyecciones trazan perfiles con creciente cantidad de
+                                poblaci&oacute;n en edad escolar
+                            </div>
+                            <br/>
+                        </li>
+                        <li>
+                            <div style="text-decoration: underline;">La Encuesta Permanente de Hogares:</div>
+                            <div>
+                                Por su parte, los guarismos relevados por la
+                                Encuesta Permanente de Hogares brindan elementos para afirmar que el fen&oacute;meno
+                                del crecimiento poblacional observado en 2001 en el grupo de 0 a 2 a&ntilde;os, no se instal&oacute;
+                                como una constante del comportamiento demogr&aacute;fico del pa&iacute;s, sino que se trat&oacute; de
+                                una especie de baby boom, de ni&ntilde;os nacidos entre 2000 y 2001. Tal como ilustra el
+                                siguiente gr&aacute;fico, estos ni&ntilde;os ten&iacute;an entre 5 y 6 a&ntilde;os en el a&ntilde;o 2006.
+                            </div>
+                            <br/>
+                        </li>
+                    </ul>
+                    <br/>
+                </li>
+                <li>
+                    <div style="font-weight: bold;">El criterio adoptado</div>
+                    <div>
+                        Se realiz&oacute; una evaluaci&oacute;n de las fuentes disponibles, teniendo en cuenta los requisitos con los
+                        que deb&iacute;a contar el dato poblacional requerido para el desarrollo de an&aacute;lisis sobre la cobertura
+                        educativa. Este dato deb&iacute;a:
+                        <br/>
+                        <br/>
+                        <ul style="list-style: circle;">
+                            <li>
+                                Reflejar las tendencias demogr&aacute;ficas efectivamente registradas por los relevamientos
+                                estad&iacute;sticos m&aacute;s recientes.
+                            </li>
+                            <li>
+                                Tener consistencia con los datos de matr&iacute;cula escolar, para el an&aacute;lisis de tasas de
+                                escolarizaci&oacute;n.
+                            </li>
+                            <li>
+                                Ser pasible de desagregaci&oacute;n a nivel municipal, para el establecimiento de metas de
+                                escolarizaci&oacute;n municipales.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <br/>
+            <br/>
+            <div style="font-weight: bold; color:#395362;">
+                En funci&oacute;n de estas consideraciones, se decidi&oacute; adoptar un criterio alternativo de estimaci&oacute;n
+                de la poblaci&oacute;n, basado en la matr&iacute;cula escolar. Dicho c&aacute;lculo permite aproximar, en base a los
+                m&aacute;ximos de matr&iacute;cula por edad, un total m&iacute;nimo de poblaci&oacute;n por edad simple.
+                Las estimaciones construidas con esta metodolog&iacute;a han sido aceptadas como v&aacute;lidas por la
+                Secretar&iacute;a de Educaci&oacute;n de Honduras, y que las toma como datos de referencia provisorios,
+                hasta que se encuentren disponibles los resultados del pr&oacute;ximo censo de poblaci&oacute;n.
+            </div>
+            <br/>
+            <div class="seccionDescarga">
+                <a href="siee_downloader.php?docType=pdf&file_name=informeHnDerechoEducaPoblacionEst.pdf" target="_blank">Descarga el documento completo sobre el Calculo de la Poblaci&oacute;n Estimada</a>
+            </div>
+            <br/>
+            <br/>
+            <div class="titles">
+                A continuaci&oacute;n se presentan los criterios de c&aacute;lculo correspondientes al a&ntilde;o 2010, y el m&iacute;nimo
+                de poblaci&oacute;n estimada por edad simple: <span class="optionBtns" id="optViewMore" onclick="showMore()">Mostrar</span><span class="optionBtns" id="optViewLess" onclick="showLess()" style="display:none;">Esconder</span>
+            </div>
+            <br/>
+            <br/>
+            <div id="moreInfo" style="display:none;">
+                <div style="text-align:center;" >
+                    <div>Tabla 24. C&aacute;lculo realizado para la estimaci&oacute;n del M&iacute;nimo de Poblaci&oacute;n por edad simple.</div>
+                    <br/>
+                    <div style="width: 400px; display: inline-block;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 40%;">Tramo de Edad</th>
+                                    <th>C&aacute;lculo realizado para cada Edad Simple</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>5 a 11 a&ntilde;os</th>
+                                    <th>Promedio de la Matricula de 8 a 10 a&ntilde;os</th>
+                                </tr>
+                                <tr>
+                                    <th>12 a 14 a&ntilde;os</th>
+                                    <th>Promedio de la Matricula de 9 a 10 a&ntilde;os</th>
+                                </tr>
+                                <tr>
+                                    <th>15 y 16 a&ntilde;os</th>
+                                    <th>Promedio de la Matricula de 10 a 11 a&ntilde;os</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br/>
+                <div style="text-align:center;">
+                    <div>Tabla 25. M&iacute;nimo de Poblaci&oacute;n Estimada por edad simple y Tasa de Escolarizaci&oacute;n espec&iacute;fica, A&ntilde;o 2010.</div>
+                    <br/>
+                    <div style="width: 600px; display: inline-block;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 10%;">Edad simple</th>
+                                    <th>Matricula 2010</th>
+                                    <th style="width: 30%;">Poblaci&oacute;n Estimada 2010</th>
+                                    <th style="width: 30%;">Tasa de Escolarizaci&oacute;n Espec&iacute;fica</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>5 a&ntilde;os</th>
+                                    <td>140,439</td>
+                                    <td>196,552</td>
+                                    <td>71.5%</td>
+                                </tr>
+                                <tr>
+                                    <th>6 a&ntilde;os</th>
+                                    <td>164,349</td>
+                                    <td>196,552</td>
+                                    <td>83.6%</td>
+                                </tr>
+                                <tr>
+                                    <th>7 a&ntilde;os</th>
+                                    <td>170,961</td>
+                                    <td>196,552</td>
+                                    <td>87.00%</td>
+                                </tr>
+                                <tr>
+                                    <th>8 a&ntilde;os</th>
+                                    <td>184,553</td>
+                                    <td>196,552</td>
+                                    <td>93.9%</td>
+                                </tr>
+                                <tr>
+                                    <th>9 a&ntilde;os</th>
+                                    <td>204,713</td>
+                                    <td>196,552</td>
+                                    <td>104.2%*</td>
+                                </tr>
+                                <tr>
+                                    <th>10 a&ntilde;os</th>
+                                    <td>204,010</td>
+                                    <td>196,552</td>
+                                    <td>102.0%*</td>
+                                </tr>
+                                <tr>
+                                    <th>11 a&ntilde;os</th>
+                                    <td>190,168</td>
+                                    <td>196,552</td>
+                                    <td>96.8%</td>
+                                </tr>
+                                <tr>
+                                    <th>12 a&ntilde;os</th>
+                                    <td>169,367</td>
+                                    <td>198,430</td>
+                                    <td>85.4%</td>
+                                </tr>
+                                <tr>
+                                    <th>13 a&ntilde;os</th>
+                                    <td>140,161</td>
+                                    <td>198,430</td>
+                                    <td>70.6%</td>
+                                </tr>
+                                <tr>
+                                    <th>14 a&ntilde;os</th>
+                                    <td>120,067</td>
+                                    <td>198,430</td>
+                                    <td>60.5%</td>
+                                </tr>
+                                <tr>
+                                    <th>15 a&ntilde;os</th>
+                                    <td>100,365</td>
+                                    <td>195,289</td>
+                                    <td>51.4%</td>
+                                </tr>
+                                <tr>
+                                    <th>16 a&ntilde;os</th>
+                                    <td>95,046</td>
+                                    <td>195,289</td>
+                                    <td>48.7%</td>
+                                </tr>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="4">* Nota: Entre los 9 y 10 a&ntilde;os se verifican leves fluctuaciones en torno al 100%.</th>
+                                </tr>
+                            </tfoot>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
