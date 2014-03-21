@@ -371,14 +371,15 @@ function cambiarDepartamentoGlobal(elem){
                         $('#selectorDataMunicipioGlobal').stop(true, true).fadeOut('fast', function(){
                             $(this).html(html).fadeIn('fast').removeAttr('disabled');
                         });
-                        $('#etiquetaDataDeptoGlobal').html(DepartamentoDescripcion).attr('etiqueta-grafico', 'del departamento ' + DepartamentoDescripcion);
+                        $('#etiquetaDataDeptoGlobal').html(DepartamentoDescripcion).attr('etiqueta-grafico', 'departamento de ' + DepartamentoDescripcion);
                         $('#etiquetaDataMuniGlobal').html('Todos').attr('etiqueta-grafico','todos los Municipios');
                         //Resetenado los selectores del centro educativo Global
-                        $('#etiquetaDataCentroEdGlobal').html('Todos').attr('etiqueta-grafico','Todos los centros educativos.');
+                        $('#etiquetaDataCentroEdGlobal').html('Todos').attr('etiqueta-grafico','Todos los centros educativos');
                         $('#BuscadorDeCentroEducativo').attr({
                             'value'     : '',
                             'cod-ce'	: '',
                             'desc-ce'	: '',
+                            'centro-id' : '0',
                             'placeholder' : 'Escriba aqui el código o nombre del centro educativo que necesita.'
                         });
                     }
@@ -396,6 +397,7 @@ function cambiarDepartamentoGlobal(elem){
                             'value'	: '',
                             'cod-ce'	: '',
                             'desc-ce'	: '',
+                            'centro-id' : '0',
                             'placeholder'	: 'Escriba aqui el código o nombre del centro educativo que necesita.'
                         });						
                         if(resp.error !== ''){
@@ -459,6 +461,7 @@ function cambiarMunicipioGlobal(elem){
                 'value'		: '',
                 'cod-ce'	: '',
                 'desc-ce'	: '',
+                'centro-id' : '0',
                 'placeholder'	: 'Escriba aqui el código o nombre del centro educativo que necesita.'
             });
         }else{
@@ -491,20 +494,24 @@ function cambiarMunicipioGlobal(elem){
                         if( resp.error === undefined){
                             $('#etiquetaDataMuniGlobal').html(MunicipioDescripcion).attr('etiqueta-grafico',' del municipio ' + MunicipioDescripcion);
                             $('#etiquetaDataCentroEdGlobal').html('Todos').attr('EtiquetaDeDescarga','Todos los centros educativos.');
+                            $('#etiquetaDataCentroEdGlobal').html('Todos').attr('etiqueta-grafico','Todos los centros educativos');
                             $('#BuscadorDeCentroEducativo').attr({
                                 'value'		: '',
                                 'cod-ce'	: '',
                                 'desc-ce'	: '',
+                                'centro-id' : '0',
                                 'placeholder'	: 'Escriba aqui el código o nombre del centro educatívo que necesita.'
                             });
                         }
                         else{
                             //Resetenado los selectores del centro educativo Global
                             $('#etiquetaDataCentroEdGlobal').html('Todos').attr('EtiquetaDeDescarga','Todos los Centros educativos.');
+                            $('#etiquetaDataCentroEdGlobal').html('Todos').attr('etiqueta-grafico','Todos los centros educativos');
                             $('#BuscadorDeCentroEducativo').attr({
                                 'value'		: '',
                                 'cod-ce'	: '',
                                 'desc-ce'	: '',
+                                'centro-id' : '0',
                                 'placeholder'	: 'Escriba aqui el código o nombre del centro educatívo que necesita.'
                             });
                             $( "#dialogWindow_contenido" ).html('<p>' + resp.error + '</p>').dialog({
@@ -552,14 +559,19 @@ function cambiarMunicipioGlobal(elem){
     }
 }
 function centroEducativoGlobal(){
-    var textoActual = $.trim($('#centroEducativoGlobal').val());
-    alert(textoActual);
+    var textoActual = $.trim($('#etiquetaDataCentroEdGlobal').attr('EtiquetaDeDescarga'));
+    //alert(textoActual);
     if(textoActual !== 'Todos los centros educativos'){
-        var _codigo_centro = $.trim($('#centroEducativoGlobal').val().split('-')[0]).replace(/^\s+|\s+$/g, '');
+        var _codigo_centro = $.trim($('#BuscadorDeCentroEducativo').val().split('-')[0]).replace(/^\s+|\s+$/g, '');
         var patt_codigo = /^[0-9]+$/;
     
         if( (_codigo_centro.length === 9) && patt_codigo.test(_codigo_centro) ){
-            alert('En construccion, filtro centro educativo.');
+            //alert('En construccion, filtro centro educativo.');
+            $('#etiquetaDataCentroEdGlobal').html($('#BuscadorDeCentroEducativo').attr('desc-ce'));
+            $('#etiquetaDataCentroEdGlobal').attr('EtiquetaDeDescarga',$('#BuscadorDeCentroEducativo').attr('desc-ce'));
+            $('#etiquetaDataCentroEdGlobal').attr('etiqueta-grafico',' Centro educativo '+ $('#BuscadorDeCentroEducativo').attr('cod-ce') + ' - ' + $('#BuscadorDeCentroEducativo').attr('desc-ce'));
+            $('#etiquetaDataMuniGlobal').attr('etiqueta-grafico',"");
+            $('#etiquetaDataDeptoGlobal').attr('etiqueta-grafico',"");
         }
         else{            
             var _html = "<p>Parece que el código del Centro Educativo fue alterado, por favor vuelve a escribir el nombre del Centro Educativo.</p>";
@@ -800,6 +812,7 @@ function recargarIndicador(archivo, desagregacion){
         var funcion = '$(\'div.loadingInfo[for="' + archivo + '"], #loadingGif\').stop(true,true).fadeOut("fast");';
         obtenerIndicador(archivo, desagregacion, funcion, 3);
     });
+
 }
 function mostrarLoadingIndicadores(idElem){
     $('#' + idElem).html(
@@ -819,7 +832,7 @@ function obtenerIndicador(archivo, desagregacion, funcion, tipo_carga){
     var _anio		= $.trim($('#selectorDataAnioGlobal').val());
     var _filtroDepto	= $.trim($('#selectorDataDepartamentoGlobal').val());
     var _filtroMuni	= $.trim($('#selectorDataMunicipioGlobal').val());
-    var _filtroCeduc	= 0;
+    var _filtroCeduc	= $.trim($('#BuscadorDeCentroEducativo').attr('centro-id'));;
     var regExpAnio	= new RegExp("^[1-9]{1}[0-9]{3}$");
     var regExpDepto	= new RegExp("^[0-9]{1,2}$");
     var regExpMunicipio = new RegExp("^[0-9]{1,3}$");
@@ -866,9 +879,17 @@ function obtenerIndicador(archivo, desagregacion, funcion, tipo_carga){
                             var js = $(response).last();
                             $('#contenedorIndicadores #' + id).slideUp('fast', function(){
                                 $(this).html( $(response).html() ).append( js ).slideDown('slow');
+                                if ($("#BuscadorDeCentroEducativo").attr("centro-id")!=0){
+                                        $("#DesagregarZona").hide();
+                                        $("#DesagregarAdministracion").hide();
+                                }
                             });
                         break;
                     default: $('#contenedorIndicadores').html(response);
+                }
+                if ($("#BuscadorDeCentroEducativo").attr("centro-id")!=0){
+                        $("#DesagregarZona").hide();
+                        $("#DesagregarAdministracion").hide();
                 }
             }
         });

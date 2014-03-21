@@ -69,11 +69,11 @@ $stmt_departamentos->closeCursor();
             <div class="buscadorCentrosEducativos">
                 <div class="opcionesBusqueda">
                     <label for="BuscadorDeCentroEducativo">Buscar Centro Educat&iacute;vo:</label>
-                        <input id="BuscadorDeCentroEducativo" class="busquedaNombre" type="text" value="" cod-ce="" desc-ce="" placeholder="Escriba aquí el código o nombre del centro educativo que necesita."/>
+                        <input id="BuscadorDeCentroEducativo" class="busquedaNombre" type="text" value="" cod-ce="" desc-ce="" centro-id="0" placeholder="Escriba aquí el código o nombre del centro educativo que necesita."/>
                 </div>
                 <div style="padding: 4px; float: left;">&nbsp;</div>
                 <div id="btnBusquedaCentros" class="botonBusqueda" original-title="Presiona para utilizar el C.E. seleccionado."  onclick="centroEducativoGlobal()">
-                    <img src="recursos/imagenes/btnBusquedaCentros.png" onclick="centroEducativoGlobal()"/>
+                    <img src="recursos/imagenes/btnBusquedaCentros.png" />
                 </div>
                 <a id="verCentroEnMapaEducativo" class="linkVerCentroEnMapa" href="" title="">Ver en Mapa</a>
                 <span id="separadorOpcionesCE" class="linkVerCentroEnMapa" style="color: #777; text-decoration: none;">|</span>
@@ -121,7 +121,9 @@ $stmt_departamentos->closeCursor();
                             return {
                                 label: item.codigo + " - " + item.nombre,
                                 value: item.codigo + " - " + item.nombre,
-                                centro_id : item.id
+                                centro_id : item.id,
+                                codigo : item.codigo,
+                                nombre : item.nombre
                             }
                         }));
                     }
@@ -132,6 +134,9 @@ $stmt_departamentos->closeCursor();
                 if( ui.item ){
                     //escogio un centro
                     $("#BuscadorDeCentroEducativo").attr('value', ui.item.label);
+                    $("#BuscadorDeCentroEducativo").attr('centro-id', ui.item.centro_id);
+                    $("#BuscadorDeCentroEducativo").attr('desc-ce', ui.item.nombre);
+                    $("#BuscadorDeCentroEducativo").attr('cod-ce', ui.item.codigo);
                 }else{
                     $("#BuscadorDeCentroEducativo").attr('value', '');
                 }
