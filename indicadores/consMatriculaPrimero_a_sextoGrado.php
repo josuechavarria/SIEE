@@ -229,7 +229,7 @@ if (ISSET($_POST['anio']) && ISSET($_POST['departamento']) && ISSET($_POST['muni
                                 text: '<?php echo utf8_encode($indicador['titulo']) ?>'
                             },
                             subtitle: {
-                                text: "Universo: " + $('#etiquetaDataMuniGlobal').attr('etiqueta-grafico') + " " + $('#etiquetaDataDeptoGlobal').attr('etiqueta-grafico') + ", Año " + $('#etiquetaDataAnioGlobal').text()
+                                text: "Universo: " + $('#etiquetaDataMuniGlobal').attr('etiqueta-grafico') + " " + $('#etiquetaDataDeptoGlobal').attr('etiqueta-grafico') + "  " + $('#etiquetaDataCentroEdGlobal').attr('etiqueta-grafico') + ", Año " + $('#etiquetaDataAnioGlobal').text()
                             },
                             credits: {
                                 enabled: false

@@ -13,7 +13,8 @@ function renderizarIndicador($indicador){
 
 function renderizarTitulo($indicador){
 	$html = 
-	'<div class="tituloIndicadores" id="tituloIndicador">' .
+	'
+	<div class="tituloIndicadores" id="tituloIndicador">' .
             htmlentities($indicador['titulo']) . 
             '<div class="opcionEliminarIndicador">' .
                     '<a onclick="removerIndicadorDeContenido(\'' . $indicador['codigo_indicador'] . '\')">Remover indicador</a>' . 
@@ -393,22 +394,22 @@ function renderizarContenedorDeGrafica($indicador){
 	foreach($indicador['desagregaciones'] as $desagregacion){
 		if ($desagregacion['id'] == 1){
 			$html .=
-			'<div name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">'.
+			'<div id="DesagregarGenero" name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">'.
 				'<img src="recursos/iconos/gender.png"/>&nbsp;&nbsp;Desagregar Por Genero' .
 			'</div>';
 		}else if ($desagregacion['id'] == 2){
 			$html .=
-			'<div name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">'.
+			'<div id="DesagregarAdministracion" name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">'.
                 '<img src="recursos/iconos/bank.png"/>&nbsp;&nbsp;Desagregar Por Administraci&oacute;n' .
             '</div>';
 		}else if ($desagregacion['id'] == 3){
 			$html .=
-			'<div name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">' .
+			'<div id="DesagregarZona" name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">' .
                 '<img src="recursos/iconos/zone.png"/>&nbsp;&nbsp;Desagregar Por Zona' .
 			'</div>';
 		}else if ($desagregacion['id'] == 7){
 			$html .=
-			'<div name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">' .
+			'<div id="DesagregarModalidad" name="DesagregaIndicador" class="botonesDesagreacion" onclick="recargarIndicador(\'' .trim($indicador['url_archivo_indicador']) .'\',\''.$desagregacion['id'].'\')">' .
                 '<img src="recursos/iconos/pencil-ruler.png"/>&nbsp;&nbsp;Desagregar Por Modalidad' .
             '</div>';
 		}else{
@@ -575,3 +576,5 @@ function ObtenerDatos($NombreDeIndicador, $DatosQuery) {
     return $datos_indicador;
 }
 ?>
+
+

@@ -8,6 +8,7 @@ try {
     exit;
 }
 session_start();
+error_reporting(0);
 //para el tour
 /*$expire= time()+60*60*24*30; //1 mes
 
